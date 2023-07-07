@@ -1,0 +1,9 @@
+{
+    "VM Name":  "HyWorkAutomationAccount",
+    "Resource Group Name":  "AZ-RG-TEST-001",
+    "Subscription":  null,
+    "Location":  "eastus2",
+    "Os Type":  null,
+    "Os Disk":  "HyWorkAutomationAccount_OsDisk_1_****",
+    "VM Id":  "/subscriptions/sub_id/resourceGroups/rg_name/providers/Microsoft.Compute/virtualMachines/vm_name"
+}
