@@ -4,7 +4,7 @@ $subscriptions = Get-AzSubscription
 foreach ($sub in $subscriptions)
     {
         Set-AzContext -Subscription $sub
-            $vms = Get-AzVM
+            $vms = Get-AzVM -status
             foreach($vm in $vms)
                 {
                     $vmInfo = [pscustomobject]@{
@@ -14,7 +14,7 @@ foreach ($sub in $subscriptions)
                     'Subscription' = $vm.SubscriptionName
                     'Location' = $vm.Location
                     'Os Type' = $vm.OsType
-                    'Power Staus' = $vm.Status.DisplayStatus
+                    'Power Staus' = $vm.PowerState
                     'Os Disk' = $vm.StorageProfile.OsDisk.Name
                     'VM Id' = $vm.Id
                     }
